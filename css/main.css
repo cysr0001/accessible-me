@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: #333;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -24,7 +25,7 @@ img {
   width: 100%;
 }
 
-.main-nav ul {
+nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -32,16 +33,22 @@ img {
   padding: 0;
 }
 
-.main-nav ul li {
+nav ul li {
   flex: 1;
   text-align: center;
 }
 
-.main-nav ul li a {
+nav ul li a {
   display: block;
   color: inherit;
   text-decoration: none;
   font-size: 1.25rem;
+  padding: 1rem;
+  margin-bottom: 0.50em;
+}
+
+nav ul li a:hover {
+  outline: 1px solid #fff;
 }
 
 form input,
@@ -60,12 +67,31 @@ form textarea {
 }
 
 form button {
+  color: white;
   background: none;
-  border: 2px solid black;
-  padding: 1rem;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 1rem 2rem;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+form button:hover {
+  background: black;
+  color: white;
 }
 
 .site-footer {
-  padding: 2rem 0;
+  padding: 2rem;
+}
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
 }
