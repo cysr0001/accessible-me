@@ -21,10 +21,10 @@
       <h1 role="heading">Jam Box Studios</h1>
       <nav role="navigation">
         <ul role="list">
-          <li role="listitem"><a href="#Home">Home</a></li>
-          <li role="listitem"><a href="#Products">Products</a></li>
-          <li role="listitem"><a href="#Reservation">Reservation</a></li>
-          <li role="listitem"><a href="#Studio">Studio</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Products">Products</a></li>
+          <li><a href="#Reservation">Reservation</a></li>
+          <li><a href="#Studio">Studio</a></li>
         </ul>
       </nav>
       <img src="https://picsum.photos/1200/900" class="banner" alt="">
@@ -51,24 +51,25 @@
           <li itemprop="phone">Phone: 613-000-0000</li>
         </ul>
         <h3 role="heading">Address</h3>
-        <p itemprop="address">
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="name">Jambox Studios</span>
+          <span itemprop="streetAddress">123 Guitar Road,</span>
+          <span itemprop="addressLocality">Musicville,</span>
+          <span itemprop="addressRegion">Danceistan</span>
+          <span itemprop="postalCode">B3T 0L0</span>
         </p>
       </div>
       <section id="contact" class="contact-section" aria-labelledby="contact">
-        <h3 role="heading">Contact Us</h3>
+        <h3>Contact Us</h3>
         <form action="thanks.html" role="form">
           <label for="name">Full Name</label>
-          <input type="text" placeholder="Full Name" id="name">
-          <label for="email">Email</label>
-          <input type="text" placeholder="Email" id="email">
-          <label for="subject">Subject</label>
-          <input type="text" placeholder="Subject" id="subject">
-          <label for="message">Your Message</label>
-          <textarea placeholder="Your Message" id="message"></textarea>
+          <input type="text" placeholder="Full Name" id="name" aria-labelledby="name-label">
+          <label for="email" id="email-label">Email</label>
+          <input type="text" placeholder="Email" id="email" aria-labelledby="email-label">
+          <label for="subject" id="subject-label">Subject</label>
+          <input type="text" placeholder="Subject" id="subject" aria-labelledby="subject-label">
+          <label for="message" id="message-label">Your Message</label>
+          <textarea placeholder="Your Message" id="message" aria-labelledby="message-label"></textarea>
           <button type="submit" aria-label="Send message">Send</button>
         </form>
       </section>
