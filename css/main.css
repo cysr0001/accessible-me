@@ -68,10 +68,13 @@ nav ul li a {
   font-size: 1.25rem;
   padding: 1rem;
   margin-bottom: 0.50em;
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  outline: 1px solid #000000;
+  background: black;
+  color: rgb(255, 255, 255);
+  /* outline: 1px solid #000000; */
 }
 label {
   display: block;
